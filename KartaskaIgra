@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace KartaskaIgra
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int upisBrojaKarte, vrijednost = 0;
+            while (vrijednost < 31)
+            {
+                Console.Write("Upisite broj karte izmedu 1-13: ");
+                upisBrojaKarte = Convert.ToInt32(Console.ReadLine());
+                if (upisBrojaKarte < 1 || upisBrojaKarte > 13)
+                {
+                    Console.WriteLine("Krivi unos");
+
+                }
+                else
+                {
+
+
+                    vrijednost += upisBrojaKarte;
+                }
+            }
+
+                    if (vrijednost == 31)
+                    {
+                        Console.WriteLine("Pobjeda");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Gubitak");
+                    }
+
+
+
+
+
+            Console.ReadLine();          
+
+
+
+        }
+    }
+}
